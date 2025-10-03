@@ -51,7 +51,7 @@ function Card({
       transition={{ type: "spring", stiffness: 220, damping: 18 }}
       style={{ transform: `rotate(${rotation}deg)` }}
       className={
-        "rounded-2xl bg-white/70 backdrop-blur-md border border-white/30 shadow-lg p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0A0080]/30 " +
+        "rounded-2xl bg-white/70 backdrop-blur-md border border-white/30 shadow-lg p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0A0080]/30" +
         className
       }
       tabIndex={0}
@@ -82,7 +82,7 @@ export default function CoutureFooter(): JSX.Element {
   const reduce = useReducedMotion();
 
   return (
-    <footer className="relative bg-gradient-to-b from-white to-[#f8faff] overflow-hidden pt-10 pb-6 px-6 sm:px-8">
+    <footer className="relative bg-gradient-to-b from-white to-[#f8faff] overflow-hidden mb-18 pt-10 pb-6 px-6 sm:px-8">
       {/* Decorative blur shapes */}
       <div aria-hidden className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-20 -left-20 w-72 h-72 bg-[#EBBAB9]/18 rounded-full blur-3xl" />
