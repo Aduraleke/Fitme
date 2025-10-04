@@ -93,7 +93,7 @@ export default function ProblemSection() {
             The Fit Problem
           </motion.h2>
           <p className="text-[#0A0080]/80 mt-4 text-sm md:text-lg max-w-md mx-auto leading-relaxed">
-            Every bad fit starts a ripple — confusion, returns, frustration.{" "}
+            Every bad fit starts a ripple, confusion, returns, frustration.{" "}
             <br />
             <span className="font-semibold text-[#0A0080]">FitMe</span> stops
             the wave.
