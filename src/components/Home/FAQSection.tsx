@@ -115,7 +115,7 @@ export default function FAQSection() {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                    className="px-6 pb-4 text-xs md:text-[12px] text-[#0A0080]/85 leading-relaxed"
+                    className="px-6 pb-4 text-xs md:text-[14px] text-[#0A0080]/85 leading-relaxed"
                   >
                     {faq.answer}
                   </motion.div>
