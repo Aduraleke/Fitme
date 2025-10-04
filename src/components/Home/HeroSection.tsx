@@ -204,15 +204,15 @@ export default function HeroSection() {
               goToIndex(i);
               if (n.type === "cta") router.push("/profile-setup");
             }}
-            className={`flex justify-between items-center bg-white/80 backdrop-blur-md border border-gray-200/60 rounded-2xl px-5 py-4 shadow-lg transition-all ${
+            className={`flex justify-between items-center bg-white/80 backdrop-blur-md border border-gray-200/60 rounded-2xl px-5 py-3 shadow-lg transition-all ${
               index === i
                 ? "border-[#0A0080] shadow-[#0A0080]/25 scale-[1.04]"
                 : "hover:shadow-md"
             }`}
           >
             <div className="flex flex-col text-left">
-              <span className="text-base font-semibold text-[#0A0080]">{n.title}</span>
-              <span className="text-xs text-gray-500">{n.hint}</span>
+              <span className="text-[12px] font-semibold text-[#0A0080]">{n.title}</span>
+              <span className="text-[10px] text-gray-500">{n.hint}</span>
             </div>
             <div
               className={`w-3.5 h-3.5 rounded-full ${
