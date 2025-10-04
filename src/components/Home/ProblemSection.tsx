@@ -130,11 +130,11 @@ export default function ProblemSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
-            className="text-3xl md:text-6xl font-extrabold bg-gradient-to-r from-[#0A0080] via-[#5641a3] to-[#EBBAB9] bg-clip-text text-transparent drop-shadow-sm tracking-tight"
+            className="text-2xl md:text-4xl font-extrabold bg-gradient-to-r from-[#0A0080] via-[#5641a3] to-[#EBBAB9] bg-clip-text text-transparent drop-shadow-sm tracking-tight"
           >
             The Fit Problem
           </motion.h2>
-          <p className="text-[#0A0080]/80 mt-4 text-sm md:text-lg max-w-md mx-auto leading-relaxed">
+          <p className="text-[#0A0080]/80 mt-4 text-xs md:text-sm max-w-md mx-auto leading-relaxed">
             Every bad fit starts a ripple, confusion, returns, frustration.{" "}
             <br />
             <span className="font-semibold text-[#0A0080]">FitMe</span> stops
