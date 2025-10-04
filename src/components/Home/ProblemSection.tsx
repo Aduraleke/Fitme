@@ -212,18 +212,18 @@ export default function ProblemSection() {
                   duration: 3.2,
                   ease: "easeInOut",
                 }}
-                className="w-32 h-32 flex items-center justify-center rounded-3xl bg-white/90 border border-white/60 shadow-[0_10px_40px_rgba(0,0,0,0.05)] backdrop-blur-lg"
+                className="w-24 h-24 flex items-center justify-center rounded-3xl bg-white/90 border border-white/60 shadow-[0_10px_40px_rgba(0,0,0,0.05)] backdrop-blur-lg"
               >
                 <Icon
                   icon={problems[activeIndex].icon}
-                  width="54"
-                  height="54"
+                  width="48"
+                  height="48"
                   color={problems[activeIndex].color}
                 />
               </motion.div>
 
               <motion.h3
-                className="text-2xl font-semibold text-[#0A0080] mt-10"
+                className="text-lg font-semibold text-[#0A0080] mt-10"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
@@ -231,7 +231,7 @@ export default function ProblemSection() {
                 {problems[activeIndex].title}
               </motion.h3>
 
-              <p className="text-base text-gray-700 mt-4 max-w-[300px] leading-relaxed">
+              <p className="text-sm text-[#0A0080] mt-4 max-w-[300px] leading-relaxed">
                 {problems[activeIndex].desc}
               </p>
             </motion.div>
@@ -243,9 +243,9 @@ export default function ProblemSection() {
               <motion.button
                 key={i}
                 onClick={() => setActiveIndex(i)}
-                className={`w-3.5 h-3.5 rounded-full transition-all duration-300 ${
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   i === activeIndex
-                    ? "bg-[#0A0080] scale-125 shadow-[0_0_10px_#0A008090]"
+                    ? "bg-[#0A0080] scale-80 shadow-[0_0_10px_#0A008090]"
                     : "bg-gray-300"
                 }`}
                 whileHover={{ scale: 1.3 }}
