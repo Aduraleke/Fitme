@@ -223,13 +223,7 @@ export default function HeroSection() {
         ))}
       </motion.div>
 
-      {/* Mobile CTA */}
-      <Link
-        href="/profile-setup"
-        className="block md:hidden mx-auto mt-8 w-[85%] max-w-xs text-center px-5 py-3 rounded-full bg-gradient-to-tr from-[#EBBAB9] to-[#0A0080] text-white font-semibold shadow-lg hover:opacity-90 transition"
-      >
-        Get Started
-      </Link>
+      
 
       {/* Bottom Carousel */}
       <div
@@ -248,26 +242,26 @@ export default function HeroSection() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -10, opacity: 0 }}
               transition={{ duration: 0.45 }}
-              className="mx-auto w-full bg-gradient-to-br from-white/95 to-white/85 backdrop-blur-md border border-white/40 rounded-3xl px-5 py-4 shadow-[0_8px_30px_rgba(0,0,0,0.06)] flex items-center justify-between gap-3"
+              className="mx-auto w-full bg-gradient-to-br from-white/95 to-white/85 backdrop-blur-md border border-white/40 rounded-3xl px-5 py-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] flex items-center justify-between gap-3"
             >
               <div>
-                <div className="text-sm font-semibold text-[#0A0080]">
+                <div className="text-[12px] font-semibold text-[#0A0080]">
                   {NODES[index].title}
                 </div>
-                <div className="text-xs text-gray-500">{NODES[index].hint}</div>
+                <div className="text-[10px] text-gray-500">{NODES[index].hint}</div>
               </div>
               <div>
                 {NODES[index].type === "cta" ? (
                   <Link
                     href="/profile-setup"
-                    className="inline-block px-4 py-2 rounded-full bg-gradient-to-tr from-[#EBBAB9] to-[#0A0080] text-white font-medium text-sm"
+                    className="inline-block px-4 py-2 rounded-full bg-gradient-to-tr from-[#EBBAB9] to-[#0A0080] text-white font-medium text-[8px]"
                   >
                     Get Started
                   </Link>
                 ) : (
                   <button
                     onClick={() => console.log("Open action for", NODES[index].id)}
-                    className="px-4 py-2 rounded-full bg-[#0A0080]/10 text-[#0A0080] font-medium text-sm"
+                    className="px-4 py-2 rounded-full bg-[#0A0080]/10 text-[#0A0080] font-medium text-[10px]"
                   >
                     Open
                   </button>
